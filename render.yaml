@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: astro-md
+    runtime: node
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: SESSION_ID
+        sync: false
+      - key: HOST
+        value: RENDER
+      - key: PORT
+        value: 8000
+      - key: LANG
+        value: EN
+      - key: ALIVE_MSG
+        value: default
+      - key: ALIVE_LOGO
+        value: https://i.imgur.com/v8iuP8v.jpg
+      - key: FOOTER
+        value: "ᴀꜱᴛʀᴏ-ᴍᴅ ᴘᴜʙʟɪᴄ ꜱᴛᴀʙʟᴇ"
+      - key: CAPTION
+        value: "*ɢᴇɴᴀʀᴀᴛᴇᴅ ʙʏ ᴀꜱᴛʀᴏ-ᴍᴅ*"
+      - key: ONLY_GROUP
+        value: "false"
+      - key: INBOX_BL_MSG
+        value: "*Inbox not allowed*"
